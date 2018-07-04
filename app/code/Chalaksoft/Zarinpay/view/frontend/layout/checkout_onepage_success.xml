@@ -1,0 +1,14 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../../lib/internal/Magento/Framework/View/Layout/etc/page_configuration.xsd" layout="1column">
+
+    <head>
+        <title>
+            zarinpay call back
+        </title>
+    </head>
+    <body>
+        <referenceContainer name="content">
+            <block class="Chalaksoft\Zarinpay\Block\Redirect" name="callback" template="callback.phtml" />
+
+        </referenceContainer>
+    </body>
+</page>

@@ -1,0 +1,24 @@
+<?php
+/**
+ ** @var $this \Chalaksoft\Zarinpay\Block\Redirect
+ */
+
+?>
+<h3>
+    در حال اتصال به بانک
+</h3>
+ <?php
+$result=$this->sendToBank();
+if($result['state']){
+    ?>
+
+<form method="post" id="myForm" action="<?=$result['msg']?>"></form>
+    <script>
+        document.getElementById("myForm").submit();
+
+    </script>
+<?php
+}else{
+    echo $result['msg'];
+}
+?>
